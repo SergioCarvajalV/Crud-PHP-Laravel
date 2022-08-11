@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="container w-25 p-4 bg-light text-dark bg-opacity-25 " >
+    <div class="container w-auto p-4 bg-light text-dark bg-opacity-25 " >
         <form >
             <div class="mb-3>
                 <label for="titulo" class="form-label">Titulo de la nota</label>
