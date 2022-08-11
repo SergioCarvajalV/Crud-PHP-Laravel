@@ -1,7 +1,7 @@
 <?php
 
+use App\Http\Controllers\Notascontroller;
 use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/notas', function() {
     return view('crearNota');
-});
+})->name('notas');;
+
+Route::post('/notas', [Notascontroller::class,'store'])->name('notas');
