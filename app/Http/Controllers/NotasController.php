@@ -18,6 +18,6 @@ class NotasController extends Controller
         $notas->descripcion = $request->descripcion;
         $notas->save();
 
-        return redirect()->route('notas')->with('Success', 'Nota Creada');
+        return redirect()->route('notas')->with('success', 'Nota Creada');
     }
 }
