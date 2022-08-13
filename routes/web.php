@@ -13,8 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/notas', function() {
-    return view('crearNota');
-})->name('notas');;
+Route::get('/notas', [Notascontroller::class, 'index'])->name('notas');;
 
 Route::post('/notas', [Notascontroller::class,'store'])->name('notas');
+
+Route::get('/notas/{id}', [Notascontroller::class,'show'])->name('notas-edit');
+
+Route::patch('/notas/{id}', [Notascontroller::class,'update'])->name('notas-update');
+
+Route::delete('/notas/{id}', [Notascontroller::class,'destroy'])->name('notas-destroy');
+

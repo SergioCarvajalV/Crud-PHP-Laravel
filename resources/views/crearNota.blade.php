@@ -38,6 +38,24 @@
                 <button type="submit" class="btn btn-primary" > Crear Nota </button>
             </div>
         </form>
+
+        <div>
+            @foreach ($notas as $nota)
+                <div class="row py-1">
+                    <div class="col-md-9 d-flex align-items-center">
+                        <a>{{ $nota->titulo }}</a>
+                    </div>
+                    <div class="col-md-3 d-flex justify-content-end">
+                        <form action="{{ route('notas-destroy', [$nota->id]) }}" method="POST">
+                            @method('DELETE')
+                            @csrf
+                            <button class="btn btn-danger btn-sm">Eliminar</button>
+                        </form>
+                    </div>
+                </div>
+            @endforeach
+
+        </div>
     </div>
 
 @endsection
