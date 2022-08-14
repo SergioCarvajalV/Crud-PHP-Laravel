@@ -14,7 +14,6 @@
         @enderror
 
         @error('descripcion')
-
             <script>
                 toastr.error("La descripcion debe ser de mas de 3 letras")
             </script>
