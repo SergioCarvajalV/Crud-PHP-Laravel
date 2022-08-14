@@ -12,7 +12,6 @@
     <title>OwO</title>
 </head>
 <body>
-    <link rel="stylesheet" href="styles.css">
     <nav class="navbar navbar-dark bg-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Bloc de notas</a>

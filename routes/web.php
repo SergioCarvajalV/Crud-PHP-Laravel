@@ -17,7 +17,9 @@ Route::get('/notas', [Notascontroller::class, 'index'])->name('notas');;
 
 Route::post('/notas', [Notascontroller::class,'store'])->name('notas');
 
-Route::get('/notas/{id}', [Notascontroller::class,'show'])->name('notas-edit');
+Route::get('/vernotas', [Notascontroller::class, 'indexVerNotas'])->name('verNotas');
+
+// Route::get('/index/{id}', [Notascontroller::class,'show'])->name('notas-edit');
 
 Route::patch('/notas/{id}', [Notascontroller::class,'update'])->name('notas-update');
 

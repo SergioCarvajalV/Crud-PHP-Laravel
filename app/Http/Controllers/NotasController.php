@@ -18,7 +18,7 @@ class NotasController extends Controller
         $notas->descripcion = $request->descripcion;
         $notas->save();
 
-        return redirect()->route('notas')->with('success', 'Nota Creada correctamente');
+        return redirect()->route('verNotas')->with('success', 'Nota Creada correctamente');
     }
 
 
@@ -27,9 +27,14 @@ class NotasController extends Controller
         return view('crearNota', ['notas'=>$notas]);
     }
 
+    public function indexVerNotas(){
+        $notas = Nota::all();
+        return view('index', ['notas'=>$notas]);
+    }
+
     public function show($id){
         $notas = Nota::find($id);
-        return view('notas.index', ['notas'=>$notas]);
+        return view('index', ['notas'=>$notas]);
     }
 
     public function update(Request $request, $id){
