@@ -24,8 +24,8 @@
                 toastr.success({ $message })
             </script>
         @endif
-        <div class="card">
-            <table class="table">
+        <div class="card border-color:black table">
+            <table>
                 <thead>
                   <tr>
                     <th scope="col">Titulo</th>
@@ -44,7 +44,7 @@
                             @csrf
                             <button class="btn btn-danger btn-sm">Eliminar</button>
                         </form>
-                        <br>
+                        <hr>
                         <form action="{{ route('notas-destroy', [$nota->id]) }}" method="POST">
                             @method('DELETE')
                             @csrf
@@ -55,7 +55,6 @@
                   @endforeach
                 </tbody>
               </table>
-
         </div>
     </div>
 
