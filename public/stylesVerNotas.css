@@ -16,6 +16,7 @@ div.card{
 }
 thead th:nth-child(1) {
     width: 15%;
+    padding: 20px;
 }
 thead th:nth-child(2) {
     width: 30%;
@@ -33,4 +34,8 @@ td{
 }
 th, td {
     padding: 20px;
+}
+
+td.c{
+    vertical-align: middle;
 }

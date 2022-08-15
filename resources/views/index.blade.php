@@ -38,7 +38,7 @@
                   <tr>
                     <th scope="row">{{ $nota->titulo }}</th>
                     <td>{{ $nota->descripcion }}</td>
-                    <td>
+                    <td style="text-align:center">
                         <form action="{{ route('notas-destroy', [$nota->id]) }}" method="POST">
                             @method('DELETE')
                             @csrf
