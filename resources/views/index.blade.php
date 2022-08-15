@@ -36,9 +36,9 @@
                 <tbody>
                     @foreach ($notas as $nota)
                   <tr>
-                    <th scope="row">{{ $nota->titulo }}</th>
-                    <td>{{ $nota->descripcion }}</td>
-                    <td style="text-align:center">
+                    <th scope="row" class="celda">{{ $nota->titulo }}</th>
+                    <td class="celda">{{ $nota->descripcion }}</td>
+                    <td>
                         <form action="{{ route('notas-destroy', [$nota->id]) }}" method="POST">
                             @method('DELETE')
                             @csrf

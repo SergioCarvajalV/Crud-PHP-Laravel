@@ -7,20 +7,17 @@ body{
     width: 100%;
     height: 100%;
 }
-table{
-    border-color: black!important;
-}
 div.card{
     border-color: black;
     border-bottom-color: transparent;
-    overflow:auto
+}
+table{
+    border-color: black!important;
 }
 thead th:nth-child(1) {
-    width: 15%;
     padding: 20px;
 }
 thead th:nth-child(2) {
-    width: 30%;
     border-left: 1px solid rgb(0, 0, 0);
     padding-right: 12px;
 }
@@ -35,4 +32,8 @@ td{
 }
 th, td {
     padding: 20px;
+}
+.celda{
+    width: 45%;
+    overflow-wrap: anywhere;
 }
