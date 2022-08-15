@@ -49,6 +49,6 @@ class NotasController extends Controller
     public function destroy($id){
         $notas = Nota::find($id);
         $notas->delete();
-        return redirect()->route('notas')->with('success', 'Nota Eliminada');
+        return redirect()->route('index')->with('success', 'Nota Eliminada');
     }
 }

@@ -17,7 +17,7 @@ Route::get('/notas', [Notascontroller::class, 'index'])->name('notas');;
 
 Route::post('/notas', [Notascontroller::class,'store'])->name('notas');
 
-Route::get('/', [Notascontroller::class, 'indexVerNotas']);
+Route::get('/', [Notascontroller::class, 'indexVerNotas'])->name('index');
 
 Route::get('/vernotas', [Notascontroller::class, 'indexVerNotas'])->name('verNotas');
 
