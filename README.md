@@ -1,7 +1,5 @@
 Todo:
 
--Actualizar vista index
-
 -ver el metodo index en el controlador para sacarlo
 
 -crear vista actualizar con interfaz parecida a crearNota

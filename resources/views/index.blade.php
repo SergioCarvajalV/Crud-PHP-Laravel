@@ -24,24 +24,38 @@
                 toastr.success({ $message })
             </script>
         @endif
-        <div>
-            @foreach ($notas as $nota)
-            <div class="row py-1">
-                <div class="col-md-3 d-flex align-items-center">
-                    <a>{{ $nota->titulo }}</a>
-                </div>
-                <div class="col-md-6 d-flex align-items-center">
-                    <a>{{ $nota->descripcion }}</a>
-                </div>
-                <div class="col-md-3 d-flex justify-content-end">
-                    <form action="{{ route('notas-destroy', [$nota->id]) }}" method="POST">
-                        @method('DELETE')
-                        @csrf
-                        <button class="btn btn-danger btn-sm">Eliminar</button>
-                    </form>
-                </div>
-            </div>
-            @endforeach
+        <div class="card">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Titulo</th>
+                    <th scope="col">Descripcion</th>
+                    <th scope="col">Opciones</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    @foreach ($notas as $nota)
+                  <tr>
+                    <th scope="row">{{ $nota->titulo }}</th>
+                    <td>{{ $nota->descripcion }}</td>
+                    <td>
+                        <form action="{{ route('notas-destroy', [$nota->id]) }}" method="POST">
+                            @method('DELETE')
+                            @csrf
+                            <button class="btn btn-danger btn-sm">Eliminar</button>
+                        </form>
+                        <br>
+                        <form action="{{ route('notas-destroy', [$nota->id]) }}" method="POST">
+                            @method('DELETE')
+                            @csrf
+                            <button class="btn btn-success btn-sm">Editar</button>
+                        </form>
+                    </td>
+                  </tr>
+                  @endforeach
+                </tbody>
+              </table>
+
         </div>
     </div>
 
