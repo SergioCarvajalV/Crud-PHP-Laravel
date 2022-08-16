@@ -6,6 +6,4 @@ Todo:
 
 -hacer funcionar el metodo actualizar con un boton actualizar
 
--cambiar botones eliminar y actualizar por iconos pulsables
-
 -Hacer que el search funcione en la navbar
