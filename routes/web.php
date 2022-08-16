@@ -21,7 +21,7 @@ Route::get('/', [Notascontroller::class, 'indexVerNotas'])->name('index');
 
 Route::get('/vernotas', [Notascontroller::class, 'indexVerNotas'])->name('verNotas');
 
-// Route::get('/index/{id}', [Notascontroller::class,'show'])->name('notas-edit');
+Route::get('/index/{id}', [Notascontroller::class,'show'])->name('notas-edit');
 
 Route::patch('/notas/{id}', [Notascontroller::class,'update'])->name('notas-update');
 

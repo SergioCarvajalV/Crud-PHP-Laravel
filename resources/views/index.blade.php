@@ -33,8 +33,7 @@
                             <button class="boton_index btn btn-danger btn-sm">Eliminar</button>
                         </form>
                         <hr>
-                        <form action="{{ route('notas-destroy', [$nota->id]) }}" method="POST">
-                            @method('DELETE')
+                        <form action="{{ route('notas-edit', ['id'=>$nota->id]) }}">
                             @csrf
                             <button class="boton_index btn btn-success btn-sm">Editar</button>
                         </form>

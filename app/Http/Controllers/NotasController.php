@@ -27,17 +27,20 @@ class NotasController extends Controller
     }
 
     public function show($id){
-        $notas = Nota::find($id);
-        return view('index', ['notas'=>$notas]);
+        $nota = Nota::find($id);
+        return view('actualizarNota', ['nota'=>$nota]);
     }
 
     public function update(Request $request, $id){
+        $request->validate([
+            'titulo'=> 'required|min:1',
+            'descripcion'=>'required|min:1'
+        ]);
         $nota = Nota::find($id);
         $nota->titulo = $request->titulo;
         $nota->descripcion = $request->descripcion;
         $nota->save();
-        // return view('crearNota', ['success'=> 'Nota actualizada']);
-        return redirect()->route('notas')->with('success', 'Nota actualizada');
+        return redirect()->route('verNotas')->with('success', 'Nota actualizada');
     }
 
     public function destroy($id){
