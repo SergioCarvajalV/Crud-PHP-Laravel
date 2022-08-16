@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/notas', [Notascontroller::class, 'index'])->name('notas');;
+Route::get('/notas', function(){return view('crearNota');})->name('notas');;
 
 Route::post('/notas', [Notascontroller::class,'store'])->name('notas');
 

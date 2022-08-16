@@ -21,12 +21,6 @@ class NotasController extends Controller
         return redirect()->route('verNotas')->with('success', 'Nota Creada correctamente');
     }
 
-
-    public function index(){
-        $notas = Nota::all();
-        return view('crearNota', ['notas'=>$notas]);
-    }
-
     public function indexVerNotas(){
         $notas = Nota::all();
         return view('index', ['notas'=>$notas]);
