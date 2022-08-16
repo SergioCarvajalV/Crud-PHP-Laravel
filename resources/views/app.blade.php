@@ -25,10 +25,10 @@
             </form>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Notas</a>
+            <a class="nav-link" aria-current="page" href="vernotas">Ver notas</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#">Agregar nota</a>
+            <a class="nav-link" href="notas">Agregar nota</a>
             </li>
         </ul>
         </div>

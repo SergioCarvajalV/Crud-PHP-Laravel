@@ -42,13 +42,13 @@
                         <form action="{{ route('notas-destroy', [$nota->id]) }}" method="POST">
                             @method('DELETE')
                             @csrf
-                            <button class="btn btn-danger btn-sm">Eliminar</button>
+                            <button class="boton_index btn btn-danger btn-sm">Eliminar</button>
                         </form>
                         <hr>
                         <form action="{{ route('notas-destroy', [$nota->id]) }}" method="POST">
                             @method('DELETE')
                             @csrf
-                            <button class="btn btn-success btn-sm">Editar</button>
+                            <button class="boton_index btn btn-success btn-sm">Editar</button>
                         </form>
                     </td>
                   </tr>
