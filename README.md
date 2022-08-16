@@ -8,6 +8,4 @@ Todo:
 
 -cambiar botones eliminar y actualizar por iconos pulsables
 
--Hacer que notas y agregar nota funcionen en la navbar
-
 -Hacer que el search funcione en la navbar
