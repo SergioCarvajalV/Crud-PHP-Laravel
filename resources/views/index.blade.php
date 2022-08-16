@@ -6,18 +6,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <div class="container w-auto p-4 bg-light text-dark bg-opacity-25 " >
-        @csrf
-        @error('titulo')
-            <script>
-                toastr.error("El titulo debe ser de mas de 3 letras")
-            </script>
-        @enderror
-
-        @error('descripcion')
-            <script>
-                toastr.error("La descripcion debe ser de mas de 3 letras")
-            </script>
-        @enderror
 
         @if (session('success'))
             <script>
