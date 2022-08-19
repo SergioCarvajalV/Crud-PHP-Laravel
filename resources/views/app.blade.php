@@ -15,10 +15,6 @@
     <nav class="navbar navbar-dark bg-dark">
     <div class="container-fluid">
         <a class="navbar-brand">Bloc de notas</a>
-        <form class="buscar d-flex pt-2 pb-2" role="search">
-            <input class="form-control me-2" type="search" placeholder="Titulo de la nota" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Buscar</button>
-        </form>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
